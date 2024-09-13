@@ -1,6 +1,6 @@
 
 TTS_ENGINE = "coqui-tts" # "coqui-tts" or "..."
-COQUI_ENGINE = "tacotron2-DDC" # "tacotron2-DDC" or "..."
+COQUI_ENGINE = "tacotron2-DDC" # "tacotron2-DDC" or "xtts_v2"
 
 #------------------ DO NOT MODIFY BELOW THIS LINE ------------------#
 TTS_LOCAL_DICT = {

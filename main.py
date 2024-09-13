@@ -8,9 +8,14 @@ def initialize_tts():
         processing_device = "cuda" if torch.cuda.is_available() else "cpu"
         print (f"Using device: {processing_device}")
 
-    if TTS_ENGINE == "coqui-tts":
+    if COQUI_ENGINE == "tacotron2-DDC":
         tts = TTS(model_name=COQUI_ENGINE_MODEL_NAME).to(processing_device)
         return tts
+
+    if COQUI_ENGINE == "xtts_v2":
+        tts = TTS("tts_models/multilingual/multi-dataset/xtts_v2", gpu=torch.cuda.is_available())
+        return tts
+
 
 def generate_audio(text, tts):
 
