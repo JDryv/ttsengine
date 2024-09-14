@@ -41,7 +41,7 @@
   "cudnn_deterministic": false,
   "cudnn_benchmark": false,
   "training_seed": 54321,
-  "model": "xtts",
+  "model": "xtts_v2",
   "num_loader_workers": 0,
   "num_eval_loader_workers": 0,
   "use_noise_augment": false,
