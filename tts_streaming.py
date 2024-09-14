@@ -18,7 +18,11 @@ gpt_cond_latent, speaker_embedding = model.get_conditioning_latents(audio_path=[
 print("Inference...")
 t0 = time.time()
 chunks = model.inference_stream(
-    "It took me quite a long time to develop a voice and now that I have it I am not going to be silent.",
+        """
+The revolution will not be right back after a message about a white tornado white lightning or white people,
+The revolution will not go better with Coke,
+The revolution will be no re-run brothers,
+The revolution will be live""",
     "en",
     gpt_cond_latent,
     speaker_embedding
