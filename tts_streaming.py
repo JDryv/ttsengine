@@ -13,7 +13,7 @@ model.load_checkpoint(config, checkpoint_dir="/home/jack/.local/share/tts/tts_mo
 model.cuda()
 
 print("Computing speaker latents...")
-gpt_cond_latent, speaker_embedding = model.get_conditioning_latents(audio_path=["tts_output.wav"])
+gpt_cond_latent, speaker_embedding = model.get_conditioning_latents(audio_path=["latent_GSH.wav"])
 
 print("Inference...")
 t0 = time.time()
