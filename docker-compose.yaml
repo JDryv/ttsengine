@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  # sound-server:
+  #   build:
+  #     context: ./sound-server
+  #   volumes:
+  #     - ./sound-server/sounds:/app/sounds
+  #   ports:
+  #     - "5000:5000"
+
+  sound-player:
+    build:
+      context: ./sound-player
+    # depends_on:
+    #   - sound-server
