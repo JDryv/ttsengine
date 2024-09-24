@@ -1,1 +1,1 @@
-This Repo is work in progress, thank you!
+This Repo is work in progress

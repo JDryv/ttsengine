@@ -22,8 +22,6 @@ def generate_audio(text, tts):
     if TTS_ENGINE == "coqui-tts":
         tts.tts_to_file(text=text, file_path="output.wav")
 
-    if TTS_ENGINE == "google-tts":
-        pass
     pass
 
 
