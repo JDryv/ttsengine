@@ -3,9 +3,9 @@ import subprocess
 from io import BytesIO
 import os
 
-def play_audio_chunks():
+def play_audio_chunks(process):
     # Launch the producer subprocess and connect to its stdout
-    process = subprocess.Popen(['python3', 'producer.py'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    process = subprocess.Popen(['python3', process + ".py"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
     chunk_counter = 0
 
@@ -31,4 +31,4 @@ def play_audio_chunks():
             break  # Exit if no more data is coming
 
 if __name__ == "__main__":
-    play_audio_chunks()
+    play_audio_chunks("XTTS_streamer")
